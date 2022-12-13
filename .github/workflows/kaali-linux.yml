@@ -29,7 +29,7 @@ jobs:
          run: |
            git clone https://${{ secrets.GIT_NAME }}:${{ secrets.GIT_TOKEN }}@${{ secrets.BOT_REPO }} kaali
        - name: running kaali-linux server
-         timeout-minutes: 350
+         timeout-minutes: 8500
          continue-on-error: true
          run: |
            cd kaali
